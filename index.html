@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio 3D</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <canvas id="bg"></canvas>
+    <div id="root"></div>
+
+    <!-- Three.js e seu script 3D -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./main.js"></script>
+
+    <!-- React via CDN -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Babel para compilar JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Script que carrega e compila seus componentes separados -->
+    <script type="text/javascript">
+      async function loadAndCompileBabel(src) {
+        const response = await fetch(src);
+        const code = await response.text();
+        const compiled = Babel.transform(code, { presets: ["react"] }).code;
+        eval(compiled); // define window.Header, window.Home etc.
+      }
+
+      // Lista de arquivos que você criou
+      const files = [
+        "./components/Header.jsx",
+        "./components/Home.jsx",
+        "./components/About.jsx",
+        "./components/Projects.jsx",
+        "./components/Skills.jsx",
+        "./components/Contact.jsx",
+        "./components/Footer.jsx",
+        "./App.jsx", // Esse define window.App
+      ];
+
+      // Carrega todos e renderiza o app
+      Promise.all(files.map(loadAndCompileBabel)).then(() => {
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(React.createElement(window.App));
+      });
+    </script>
+  </body>
+</html>

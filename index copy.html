@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfólio 3D</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+
+    <div id="content">
+      <header>
+        <div class="logo">Raphael Guimarães</div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#home" class="nav-link" data-pt="Início" data-en="Home"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav-link" data-pt="Sobre" data-en="About"
+                >Sobre</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="nav-link"
+                data-pt="Projetos"
+                data-en="Projects"
+                >Projetos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                class="nav-link"
+                data-pt="Habilidades"
+                data-en="Skills"
+                >Habilidades</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="nav-link"
+                data-pt="Contato"
+                data-en="Contact"
+                >Contato</a
+              >
+            </li>
+          </ul>
+          <div class="language-toggle">
+            <button class="language-btn active" data-lang="pt">PT-BR</button>
+            <button class="language-btn" data-lang="en">EN</button>
+          </div>
+        </nav>
+      </header>
+
+      <section id="home">
+        <h1
+          class="translate"
+          data-pt="Olá, sou Desenvolvedor Full Stack"
+          data-en="Hi, I'm a Full Stack Developer"
+        >
+          Olá, sou Desenvolvedor Full Stack
+        </h1>
+
+        <p
+          class="translate"
+          data-pt="Seja bem-vindo! Especializado em Python, JavaScript e Ciência de Dados, ajudo empresas e projetos a evoluírem com inteligência artificial, usando Machine Learning e LLMs para criar valor de verdade."
+          data-en="Welcome! Specialized in Python, JavaScript, and Data Science, I help companies and projects grow with artificial intelligence, using Machine Learning and LLMs to create real value."
+        >
+          Seja bem-vindo!<br />
+          Especializado em Python, JavaScript e Ciência de Dados, ajudo empresas
+          e projetos a evoluírem com inteligência artificial, usando Machine
+          Learning e LLMs para criar valor de verdade.
+        </p>
+
+        <p
+          class="translate cta-links"
+          data-pt='Quer conversar? <a href="https://wa.me/5521971837647" class="cta-btn" target="_blank">WhatsApp</a> ou <a href="https://www.linkedin.com/in/raphaelguim/" class="cta-btn" target="_blank">LinkedIn</a>.'
+          data-en='Want to talk? <a href="https://wa.me/5521971837647" class="cta-btn" target="_blank">WhatsApp</a> or <a href="https://www.linkedin.com/in/raphaelguim/" class="cta-btn" target="_blank">LinkedIn</a>.'
+        >
+          Quer conversar?
+          <a href="https://wa.me/5521971837647" class="cta-btn" target="_blank"
+            >WhatsApp</a
+          >
+          ou
+          <a
+            href="https://www.linkedin.com/in/raphaelguim/"
+            class="cta-btn"
+            target="_blank"
+            >LinkedIn</a
+          >.
+        </p>
+
+        <a
+          href="#about"
+          class="btn translate nextSection"
+          data-pt="Sobre mim"
+          data-en="About me"
+          >Sobre mim</a
+        >
+      </section>
+
+      <section id="about">
+        <h2 class="translate" data-pt="Sobre Mim" data-en="About Me">
+          Sobre Mim
+        </h2>
+
+        <div class="about-container">
+          <!-- FOTO -->
+          <div class="profile-picture">
+            <img src="eu.jpeg" alt="Picture of Raphael Guimarães" />
+          </div>
+
+          <div class="about-text">
+            <p
+              class="translate"
+              data-pt="Olá! 👋 Sou <strong>Raphael</strong>, desenvolvedor apaixonado por tecnologia, com ampla experiência em projetos inovadores e soluções personalizadas para o mercado. Desde cedo, sou movido pela curiosidade e pelo desejo de transformar ideias em produtos eficientes e escaláveis."
+              data-en="Hello! 👋 I'm <strong>Raphael</strong>, a developer passionate about technology, with broad experience in innovative projects and custom solutions for the market. Since a young age, I've been driven by curiosity and the desire to turn ideas into efficient, scalable products."
+            >
+              Olá! 👋 Sou <strong>Raphael</strong>, desenvolvedor apaixonado por
+              tecnologia, com ampla experiência em projetos inovadores e
+              soluções personalizadas para o mercado. Desde cedo, sou movido
+              pela curiosidade e pelo desejo de transformar ideias em produtos
+              eficientes e escaláveis.
+            </p>
+
+            <h3
+              class="translate"
+              data-pt="💻 Carreira como Programador"
+              data-en="💻 Career as a Programmer"
+            >
+              💻 Carreira como Programador
+            </h3>
+
+            <p
+              class="translate"
+              data-pt="Atualmente atuo como <strong>software engineer</strong> na <strong>Viasat</strong>, com foco em soluções para o setor de petróleo, atendendo grandes clientes como <strong><a href='https://petrobras.com.br/' target='_blank'>Petrobras</a></strong>, <strong><a href='https://etesco.com.br/' target='_blank'>Etesco</a></strong>, <strong><a href='https://www.foresea.com/' target='_blank'>Foresea</a></strong> e <strong><a href='https://www.acelen.com.br/' target='_blank'>Acelen</a></strong>. Implemento e desenvolvo algoritmos de engenharia e matemática voltados para cálculos essenciais em todas as fases do ciclo de vida dos poços — da <strong>descoberta</strong> à <strong>extração</strong> e até o <strong>abandono</strong>. Também sou especialista na aplicação da técnica <strong>Bowtie</strong> (estática e dinâmica), desenvolvendo soluções voltadas à <strong>segurança operacional</strong> e <strong>prevenção de falhas críticas</strong>."
+              data-en="I currently work as a <strong>software engineer</strong> at <strong>Viasat</strong>, focused on the oil sector, serving major clients such as <strong><a href='https://petrobras.com.br/' target='_blank'>Petrobras</a></strong>, <strong><a href='https://etesco.com.br/' target='_blank'>Etesco</a></strong>, <strong><a href='https://www.foresea.com/' target='_blank'>Foresea</a></strong>, and <strong><a href='https://www.acelen.com.br/' target='_blank'>Acelen</a></strong>. I implement and develop engineering and mathematical algorithms for critical calculations in all stages of the oil well lifecycle — from <strong>discovery</strong> to <strong>extraction</strong> and <strong>abandonment</strong>. I'm also a specialist in the <strong>Bowtie</strong> method (static and dynamic), creating solutions focused on <strong>operational safety</strong> and <strong>critical failure prevention</strong>."
+            >
+              Atualmente atuo como <strong>software engineer</strong> na
+              <strong>Viasat</strong>, com foco em soluções para o setor de
+              petróleo, atendendo grandes clientes como
+              <strong
+                ><a href="https://petrobras.com.br/" target="_blank"
+                  >Petrobras</a
+                ></strong
+              >,
+              <strong
+                ><a href="https://etesco.com.br/" target="_blank"
+                  >Etesco</a
+                ></strong
+              >,
+              <strong
+                ><a href="https://www.foresea.com/" target="_blank"
+                  >Foresea</a
+                ></strong
+              >
+              e
+              <strong
+                ><a href="https://www.acelen.com.br/" target="_blank"
+                  >Acelen</a
+                ></strong
+              >. Implemento e desenvolvo algoritmos de engenharia e matemática
+              voltados para cálculos essenciais em todas as fases do ciclo de
+              vida dos poços — da <strong>descoberta</strong> à
+              <strong>extração</strong> e até o <strong>abandono</strong>.
+              Também sou especialista na aplicação da técnica
+              <strong>Bowtie</strong> (estática e dinâmica), desenvolvendo
+              soluções voltadas à <strong>segurança operacional</strong> e
+              <strong>prevenção de falhas críticas</strong>.
+            </p>
+
+            <p
+              class="translate"
+              data-pt="Fui o idealizador e responsável técnico da plataforma <strong>CodebyBuddy</strong>, atual <strong><a href='https://supergeeks.com.br/' target='_blank'>SuperGeeks</a></strong>, criada para ensinar programação de forma interativa e gamificada. Implementei soluções <strong>NoCode</strong> e <strong>LowCode</strong> que facilitavam o aprendizado progressivo, permitindo que os alunos evoluíssem até conteúdos de programação avançada de forma prática e envolvente."
+              data-en="I was the creator and technical lead behind <strong>CodebyBuddy</strong>, now known as <strong><a href='https://supergeeks.com.br/' target='_blank'>SuperGeeks</a></strong>, a platform designed to teach programming through interactive and gamified experiences. I implemented <strong>NoCode</strong> and <strong>LowCode</strong> solutions that enabled students to gradually progress toward advanced programming in a practical and engaging way."
+            >
+              Fui o idealizador e responsável técnico da plataforma
+              <strong>CodebyBuddy</strong>, atual
+              <strong
+                ><a href="https://supergeeks.com.br/" target="_blank"
+                  >SuperGeeks</a
+                ></strong
+              >, criada para ensinar programação de forma interativa e
+              gamificada. Implementei soluções <strong>NoCode</strong> e
+              <strong>LowCode</strong> que facilitavam o aprendizado
+              progressivo, permitindo que os alunos evoluíssem até conteúdos de
+              programação avançada de forma prática e envolvente.
+            </p>
+
+            <p
+              class="translate"
+              data-pt="Atuei também na <strong><a href='https://www.linkedin.com/company/simulation-business-game/' target='_blank'>Simulation Jogos de Negócio</a></strong>, onde desenvolvi simuladores empresariais para treinar gerentes, investidores e administradores em setores como <strong>administração hospitalar</strong>, <strong>fábricas</strong> e <strong>instituições de ensino</strong>."
+              data-en="I also worked at <strong><a href='https://www.linkedin.com/company/simulation-business-game/' target='_blank'>Simulation Business Games</a></strong>, developing corporate simulators to train managers, investors, and administrators in areas such as <strong>hospital management</strong>, <strong>manufacturing</strong>, and <strong>educational institutions</strong>."
+            >
+              Atuei também na
+              <strong
+                ><a
+                  href="https://www.linkedin.com/company/simulation-business-game/"
+                  target="_blank"
+                  >Simulation Jogos de Negócio</a
+                ></strong
+              >, onde desenvolvi simuladores empresariais para treinar gerentes,
+              investidores e administradores em setores como
+              <strong>administração hospitalar</strong>,
+              <strong>fábricas</strong> e
+              <strong>instituições de ensino</strong>.
+            </p>
+
+            <h3
+              class="translate"
+              data-pt="Interesses Pessoais"
+              data-en="Personal Interests"
+            >
+              Interesses Pessoais
+            </h3>
+
+            <p
+              class="translate"
+              data-pt="Sou entusiasta de <strong>musculação</strong>, <strong>lutas</strong> e <strong>natação</strong>, mantendo uma rotina disciplinada para cuidar da minha saúde física e mental. Além disso, sou <strong>músico pianista</strong>, e acredito que a combinação entre arte, foco e atividade física fortalece meu equilíbrio emocional e amplia minha performance profissional."
+              data-en="I'm passionate about <strong>weightlifting</strong>, <strong>martial arts</strong>, and <strong>swimming</strong>, maintaining a disciplined routine to take care of my physical and mental health. I'm also a <strong>pianist</strong>, and I believe that the combination of art, discipline, and physical activity strengthens my emotional balance and boosts my professional performance."
+            >
+              Sou entusiasta de <strong>musculação</strong>,
+              <strong>lutas</strong> e <strong>natação</strong>, mantendo uma
+              rotina disciplinada para cuidar da minha saúde física e mental.
+              Além disso, sou <strong>músico pianista</strong>, e acredito que a
+              combinação entre arte, foco e atividade física fortalece meu
+              equilíbrio emocional e amplia minha performance profissional.
+            </p>
+
+            <div class="personal-interests">
+              <div class="interest-card">
+                <span class="icon">🏋️‍♂️</span>
+                <p
+                  class="translate"
+                  data-pt="Musculação"
+                  data-en="Weightlifting"
+                >
+                  Musculação
+                </p>
+                <div class="video-wrapper">
+                  <iframe
+                    src="https://www.instagram.com/reel/Cv1lkDrAmOV/embed"
+                    frameborder="0"
+                    allowfullscreen
+                    allowtransparency="true"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="interest-card">
+                <span class="icon">🎹</span>
+                <p class="translate" data-pt="Piano" data-en="Piano">Piano</p>
+                <div class="video-wrapper">
+                  <iframe
+                    src="https://www.instagram.com/reel/Ci-3hLxrGUA/embed"
+                    frameborder="0"
+                    allowfullscreen
+                    allowtransparency="true"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-box">
+              <p
+                class="highlight-text translate"
+                data-pt="<strong>🚀 Resumo:</strong> Programador de alma lógica e criativa. Gosto de resolver problemas difíceis com código limpo, estratégia e um toque de ousadia. 😎"
+                data-en="<strong>🚀 Summary:</strong> A programmer with a logical and creative soul. I solve tough problems with clean code, strategy, and a bold mindset. 😎"
+              >
+                <strong>🚀 Resumo:</strong> Programador de alma lógica e
+                criativa. Gosto de resolver problemas difíceis com código limpo,
+                estratégia e um toque de ousadia. 😎
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#projects"
+          class="btn translate nextSection"
+          data-pt="Projetos"
+          data-en="Projects"
+          >Projetos</a
+        >
+      </section>
+
+      <section id="projects">
+        <h2 class="translate" data-pt="Meus Projetos" data-en="My Projects">
+          Meus Projetos
+        </h2>
+        <div class="projects">
+          <div class="project-card">
+            <div class="project-img">Imagem do Projeto</div>
+            <div class="project-info">
+              <h3
+                class="project-title translate"
+                data-pt="Projeto 1"
+                data-en="Project 1"
+              >
+                Projeto 1
+              </h3>
+              <p
+                class="translate"
+                data-pt="Descrição breve do projeto. Tecnologias utilizadas e resultados alcançados."
+                data-en="Brief project description. Technologies used and results achieved."
+              >
+                Descrição breve do projeto. Tecnologias utilizadas e resultados
+                alcançados.
+              </p>
+              <a
+                href="#"
+                class="btn translate"
+                data-pt="Ver Projeto"
+                data-en="View Project"
+                >Ver Projeto</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">Imagem do Projeto</div>
+            <div class="project-info">
+              <h3
+                class="project-title translate"
+                data-pt="Projeto 2"
+                data-en="Project 2"
+              >
+                Projeto 2
+              </h3>
+              <p
+                class="translate"
+                data-pt="Descrição breve do projeto. Tecnologias utilizadas e resultados alcançados."
+                data-en="Brief project description. Technologies used and results achieved."
+              >
+                Descrição breve do projeto. Tecnologias utilizadas e resultados
+                alcançados.
+              </p>
+              <a
+                href="#"
+                class="btn translate"
+                data-pt="Ver Projeto"
+                data-en="View Project"
+                >Ver Projeto</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">Imagem do Projeto</div>
+            <div class="project-info">
+              <h3
+                class="project-title translate"
+                data-pt="Projeto 3"
+                data-en="Project 3"
+              >
+                Projeto 3
+              </h3>
+              <p
+                class="translate"
+                data-pt="Descrição breve do projeto. Tecnologias utilizadas e resultados alcançados."
+                data-en="Brief project description. Technologies used and results achieved."
+              >
+                Descrição breve do projeto. Tecnologias utilizadas e resultados
+                alcançados.
+              </p>
+              <a
+                href="#"
+                class="btn translate"
+                data-pt="Ver Projeto"
+                data-en="View Project"
+                >Ver Projeto</a
+              >
+            </div>
+          </div>
+        </div>
+        <a
+          href="#skills"
+          class="btn translate nextSection"
+          data-pt="Habilidades"
+          data-en="skills"
+          >Habilidades</a
+        >
+      </section>
+
+      <section id="skills">
+        <h2 class="translate" data-pt="Minhas Habilidades" data-en="My Skills">
+          Minhas Habilidades
+        </h2>
+        <p
+          class="translate"
+          data-pt="Estas são algumas das tecnologias e ferramentas com as quais trabalho:"
+          data-en="These are some of the technologies and tools I work with:"
+        >
+          Estas são algumas das tecnologias e ferramentas com as quais trabalho:
+        </p>
+        <div class="skills">
+          <div class="skills-category">
+            <h3
+              class="translate"
+              data-pt="Desenvolvimento Back-end"
+              data-en="Back-end Development"
+            >
+              Desenvolvimento Back-end
+            </h3>
+            <div class="skills-list">
+              <div class="skill">Python</div>
+              <div class="skill">Django</div>
+              <div class="skill">LangChain</div>
+              <div class="skill">Node.js</div>
+              <div class="skill">Java</div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3
+              class="translate"
+              data-pt="Desenvolvimento Front-end"
+              data-en="Front-end Development"
+            >
+              Desenvolvimento Front-end
+            </h3>
+            <div class="skills-list">
+              <div class="skill">JavaScript</div>
+              <div class="skill">React</div>
+              <div class="skill">Three.js</div>
+              <div class="skill">P5.js</div>
+              <div class="skill">D3.js</div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3
+              class="translate"
+              data-pt="Ciência e Análise de Dados"
+              data-en="Data Science & Analysis"
+            >
+              Ciência e Análise de Dados
+            </h3>
+            <div class="skills-list">
+              <div class="skill">Ciência de Dados</div>
+              <div class="skill">Matemática e Estatística</div>
+              <div class="skill">Visualização de Dados</div>
+              <div class="skill">Machine Learning</div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#contact"
+          class="btn translate nextSection"
+          data-pt="Contato"
+          data-en="Contact"
+          >Contato</a
+        >
+      </section>
+      <section id="contact">
+        <h2 class="translate" data-pt="Entre em Contato" data-en="Contact Me">
+          Entre em Contato
+        </h2>
+
+        <p
+          class="translate"
+          data-pt="Interessado em trabalhar juntos? Entre em contato comigo pelos seguintes meios:"
+          data-en="Interested in working together? Contact me through the following means:"
+        >
+          Interessado em trabalhar juntos? Entre em contato comigo pelos
+          seguintes meios:
+        </p>
+
+        <p
+          class="translate"
+          data-pt='Email: <a href="mailto:guimaraesraphael0203@gmail.com">guimaraesraphael0203@gmail.com</a>'
+          data-en='Email: <a href="mailto:guimaraesraphael0203@gmail.com">guimaraesraphael0203@gmail.com</a>'
+        >
+          Email:
+          <a href="mailto:guimaraesraphael0203@gmail.com"
+            >guimaraesraphael0203@gmail.com</a
+          >
+        </p>
+
+        <p
+          class="translate"
+          data-pt='LinkedIn: <a href="https://www.linkedin.com/in/raphaelguim/" target="_blank">linkedin.com/in/raphaelguim</a>'
+          data-en='LinkedIn: <a href="https://www.linkedin.com/in/raphaelguim/" target="_blank">linkedin.com/in/raphaelguim</a>'
+        >
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/raphaelguim/" target="_blank"
+            >linkedin.com/in/raphaelguim</a
+          >
+        </p>
+
+        <p
+          class="translate"
+          data-pt='GitHub: <a href="https://github.com/RaphaelGuim" target="_blank">github.com/RaphaelGuim</a>'
+          data-en='GitHub: <a href="https://github.com/RaphaelGuim" target="_blank">github.com/RaphaelGuim</a>'
+        >
+          GitHub:
+          <a href="https://github.com/RaphaelGuim" target="_blank"
+            >github.com/RaphaelGuim</a
+          >
+        </p>
+
+        <p
+          class="translate cta-links"
+          data-pt='Quer conversar? <a href="https://wa.me/5521971837647" class="cta-btn" target="_blank">WhatsApp</a> .'
+          data-en='Want to talk? <a href="https://wa.me/5521971837647" class="cta-btn" target="_blank">WhatsApp</a>.'
+        >
+          Quer conversar?
+          <a href="https://wa.me/5521971837647" class="cta-btn" target="_blank"
+            >WhatsApp</a
+          >.
+        </p>
+      </section>
+
+      <footer>
+        <p
+          class="translate"
+          data-pt="&copy; 2025 Meu Portfólio 3D. Todos os direitos reservados."
+          data-en="&copy; 2025 My 3D Portfolio. All rights reserved."
+        >
+          &copy; 2025 Meu Portfólio 3D. Todos os direitos reservados.
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
